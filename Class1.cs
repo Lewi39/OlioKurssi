@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OlioKurssi
 {
-    internal class Program
+    class Class1
     {
         static void Main(string[] args)
         {
@@ -23,7 +23,7 @@ namespace OlioKurssi
             string autotiedot = auto.ToString();
 
             Console.WriteLine(autotiedot);
-
+            
             Console.WriteLine();
 
 
@@ -34,7 +34,8 @@ namespace OlioKurssi
 
             mopo.tulostadata();
             Console.WriteLine(mopo.ToString());
-
+            
+            Console.ReadLine();
         }
     }
 }
