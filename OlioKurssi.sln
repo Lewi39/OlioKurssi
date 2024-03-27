@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OlioKurssi", "OlioKurssi.csproj", "{56A34148-BF58-4E71-B9F2-DBB0B531DE8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht1", "Teht1.csproj", "{56A34148-BF58-4E71-B9F2-DBB0B531DE8F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teht1", "Teht1", "{5B93E629-D86F-41F2-920C-E9344CB237F6}"
-	ProjectSection(SolutionItems) = preProject
-		Class1.cs = Class1.cs
-		OlioAuto.cs = OlioAuto.cs
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht2", "..\Teht2\Teht2.csproj", "{462FDB42-2B1A-47E0-9BE6-524B01DCF31A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +17,10 @@ Global
 		{56A34148-BF58-4E71-B9F2-DBB0B531DE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56A34148-BF58-4E71-B9F2-DBB0B531DE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56A34148-BF58-4E71-B9F2-DBB0B531DE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{462FDB42-2B1A-47E0-9BE6-524B01DCF31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462FDB42-2B1A-47E0-9BE6-524B01DCF31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462FDB42-2B1A-47E0-9BE6-524B01DCF31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462FDB42-2B1A-47E0-9BE6-524B01DCF31A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

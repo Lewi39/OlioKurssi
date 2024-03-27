@@ -9,10 +9,10 @@ namespace OlioKurssi
     class OlioAuto
     {
 
-   
+
         public string nimi { get; set; }
         public int nopeus { get; set; }
-        public int renkaat { get; set; } 
+        public int renkaat { get; set; }
 
 
         public void tulostadata()
