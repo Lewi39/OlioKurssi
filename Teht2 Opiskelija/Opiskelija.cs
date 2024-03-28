@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Teht2
+namespace Teht2 Opiskelija
 {
     internal class Opiskelija
     {
