@@ -6,101 +6,127 @@ using System.Threading.Tasks;
 
 namespace Teht_9
 {
-    abstract class Kanavat
+    using System;
+
+    namespace Teht_9
     {
-        public abstract void PrintKanavaData();
-        
-        public virtual float Taajuus()
+        class Suomipop : Kanavat    //uusi ali-luokka kanavat luokkaan
         {
-            return 1.5f;
-        }
-
-        public virtual void RadioKanavanNimi()
-        {
-            Console.WriteLine("");
-        }
-    }
-    class Suomipop : Kanavat
-    {
-        public override float Taajuus()
-        {
-            return 100.0f;
-        }
-
-        public override void RadioKanavanNimi()
-        {
-            Console.WriteLine("SuomiPop");
-        }
-
-        public override void PrintKanavaData()
-        {
-            Console.WriteLine("Tulosta kanavan data");
-        }
-    }
-    public class Radio
-    {
-
-        public bool Kytkin {  get; set; }
-
-        // Äänenvoimakkuuden muuttuja
-        private int ÄäneenVoimakkuuSS;
-        public virtual int ÄänenVoimakkuus
-        {
-            get { return ÄäneenVoimakkuuSS; }
-            set
+            public override float Taajuus()     // taajuus annettu uudessa luokassa 
             {
-                if (value >= 1 && value <= 9)
+                return 100.0f;
+            }
+
+            public override void RadioKanavanNimi()     //kanavan nimi
+            {
+                Console.WriteLine("Suomipop");
+            }
+            // ylempi varmaa turhaan tossa, mutta se toimii nii antaa olla 
+            public override void Print_Kanava_Data()    //printtaa radiokanavan nimen
+            {
+                Console.WriteLine("SuomiPop");
+            }
+        }
+
+        class SuomiRock : Kanavat   //uusi ali-luokka kanavt luokkaan 
+        {
+            public override float Taajuus()     //taajuus luokalle
+            {
+                return 89.0f;
+            }
+
+            public override void RadioKanavanNimi() //kanavan nimi
+            {
+                Console.WriteLine("SuomiRock");
+            }
+
+            public override void Print_Kanava_Data()    //printtaa kanavan nimen
+            {
+                Console.WriteLine("SuomiRock");
+            }
+        }
+        abstract class Kanavat      // uusi luokka 
+        {
+            public abstract void Print_Kanava_Data();
+
+            public virtual float Taajuus()  //virtualiinen floatti taajuus 
+            {
+                return 1.5f;
+            }
+
+            public virtual void RadioKanavanNimi()
+            {
+                Console.WriteLine("");
+            }
+        }
+
+        public class Radio  //radio luokka mikä  sisältää radion toimintoja 
+        {
+
+            public bool Kytkin { get; set; }    
+
+            // Äänenvoimakkuuden muuttuja
+            private int Ääneen_VoimakkuuSS;
+            public virtual int Äänen_Voimakkuus
+            {
+                get { return Ääneen_VoimakkuuSS; }
+
+                set
                 {
-                    ÄäneenVoimakkuuSS = value;
-                    Console.WriteLine("Äänenvoimakkuus on nyt " + ÄäneenVoimakkuuSS);
+                    if (value >= 1 && value <= 9)       //rajaa äänenvoimakkuuden korkeutta
+                    {
+                        Ääneen_VoimakkuuSS = value;
+                        Console.WriteLine("Äänenvoimakkuus on nyt " + Ääneen_VoimakkuuSS);
+                    }
+                    else if (value <= 0)
+                    {
+                        Console.WriteLine("Äänenvoimakkuus on jo alimmalla tasolla");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Äänenvoimakkuus on jo korkeimmalla tasolla");
+                    }
                 }
-                else if (value <=0)
+            }
+            //Muutta kytkimen tilaa
+            public void Kytkin_Päälle()
+            {
+                Kytkin = true;
+                Console.WriteLine("Radio on nyt päällä");
+            }
+            public void Kytkin_Kiinni()
+            {
+                Kytkin = false;
+                Console.WriteLine("Radio on nyt pois päältä");
+            }
+
+
+            //Taajuudenvalinta muuttuja
+            private float Taajuss;
+            public virtual float Taajus_Valinta
+            {
+                get { return Taajuss; }
+                set
                 {
-                    Console.WriteLine("Äänenvoimakkuus on jo alimmalla tasolla");
-                }
-                else
-                {
-                    Console.WriteLine("Äänenvoimakkuus on jo korkeimmalla tasolla");
+                    if (value >= 88.0 && value <= 107.9)    //Rajoittaa taajuuden valintaa 
+                    {
+                        Taajuss = value;
+                        Console.WriteLine("Taajuus löydetty " + Taajuss + "Hz");
+                        Console.WriteLine("");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ei taajuutta");
+                    }
                 }
             }
         }
-        //Muutta kytkimen tilaa
-        public void KytkinPäälle()
-        {
-            Kytkin = true;
-            Console.WriteLine("Kytkin on nyt päällä");
-        }
-        public void KytkinKiinni()
-        {
-            Kytkin = false;
-            Console.WriteLine("Kytkin on nyt pois päältä");
-        }
-
-
-        //Taajuudenvalinta muuttuja
-        private float Taajuss;
-        public virtual float TaajusValinta
-        {
-            get { return Taajuss; }
-            set
-            {
-                if (value >= 88.0 && value <= 107.9)
-                {
-                    Taajuss = value;
-                    Console.WriteLine("Taajuus löydetty " + Taajuss + "Hz");
-                }
-                else
-                {
-                    Console.WriteLine("Ei taajuutta");
-                }
-            }
-        }
-    }
-
-    
 
 
 
 
 
+
+
+    }   
 }
