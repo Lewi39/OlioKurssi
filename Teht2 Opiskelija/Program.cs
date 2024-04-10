@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
 namespace Teht2Opiskelija
+=======
+namespace Teht2 Opiskelija
+>>>>>>> b0514174cd8471e4aef979f2baab93c08d7a3a9b
 {
     class Program
     {

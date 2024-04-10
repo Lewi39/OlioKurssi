@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{56A34148-BF58-4E71-B9F2-DBB0B531DE8F}</ProjectGuid>
+    <ProjectGuid>{7EF1AC09-4FD9-4380-91C3-3B363157D88D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OlioKurssi</RootNamespace>
-    <AssemblyName>OlioKurssi</AssemblyName>
+    <RootNamespace>Teht1_Ajoneuvo</RootNamespace>
+    <AssemblyName>Teht1 Ajoneuvo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

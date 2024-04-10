@@ -44,7 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Eläimet.cs" />
+<<<<<<< HEAD
     <Compile Include="Program.Eläin.cs" />
+=======
+    <Compile Include="Program.cs" />
+>>>>>>> b0514174cd8471e4aef979f2baab93c08d7a3a9b
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
