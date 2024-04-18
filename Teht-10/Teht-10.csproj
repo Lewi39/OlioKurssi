@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A6C13097-D5BE-41D7-A731-3D0830C68DA0}</ProjectGuid>
+    <ProjectGuid>{5176C56A-3B1A-4059-9287-9DC88FDE0DDB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Teht_10</RootNamespace>
-    <AssemblyName>Teht-10</AssemblyName>
+    <RootNamespace>teht_10</RootNamespace>
+    <AssemblyName>teht-10</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animals.cs" />
+    <Compile Include="Ahven.cs" />
+    <Compile Include="animal.cs" />
+    <Compile Include="I_Can_Fly.cs" />
+    <Compile Include="I_Can_Swim.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pulu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

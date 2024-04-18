@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Eläimet.cs" />
-<<<<<<< HEAD
+<HEAD
     <Compile Include="Program.Eläin.cs" />
 =======
     <Compile Include="Program.cs" />

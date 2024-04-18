@@ -4,15 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Teht_10
+namespace teht_10
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Animals PuluOlio = new Animals();
+            Pulu Pulu = new Pulu("Pulu", 50);
 
-            Animals.Lintu.Pulu();
+            Ahven ahven = new Ahven("Ahven", 40);
+
+            Pulu.Make_A_Sound();
+            Pulu.fly();
+
+            ahven.Make_A_Sound();
+            ahven.Swim();
+
             Console.ReadLine();
         }
     }
