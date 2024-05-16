@@ -11,7 +11,6 @@ namespace harjoitus13
         public string First_Name {  get; set; }
         public string Last_Name { get; set;}
         public int Player_Number { get; set; }
-
         public void Print_Player()
         {
             Console.WriteLine("Etunimi: " + First_Name + " Sukunimi: " + Last_Name +" Pelinumero: "+ Player_Number);
@@ -38,5 +37,7 @@ namespace harjoitus13
                    ", nimi: " + player.Value.First_Name + " " + player.Value.Last_Name);
             }
         }
+
+
     }
 }

@@ -8,17 +8,16 @@ namespace OlioKurssi
 {
     class Class1
     {
-        static void Main(string[] args)
+        static void Main()
         {
             OlioAuto auto = new OlioAuto();
 
-            auto.nimi = "Toyota";
-
-            auto.nopeus = 80;
-
-            auto.renkaat = 4;
+            auto.Nimi = "Toyota";
+            auto.Nopeus = 80;
+            auto.Renkaat = 4;
 
             auto.tulostadata();
+
 
             string autotiedot = auto.ToString();
 
@@ -28,9 +27,9 @@ namespace OlioKurssi
 
 
             OlioAuto mopo = new OlioAuto();
-            mopo.nimi = "Skootteri";
-            mopo.nopeus = 80;
-            mopo.renkaat = 2;
+            mopo.Nimi = "Skootteri";
+            mopo.Nopeus = 80;
+            mopo.Renkaat = 2;
 
             mopo.tulostadata();
             Console.WriteLine(mopo.ToString());

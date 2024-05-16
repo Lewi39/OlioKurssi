@@ -34,7 +34,7 @@ class class1
                 {
                     System.Environment.Exit(1);
                 }
-
+                    // käyttäjän syöte kaupungille
                     Console.Write("Anna joukkueen " + team.Team_Name + " Kotikaupunki");
                     team.Home_City = Console.ReadLine();
 
@@ -95,7 +95,7 @@ class class1
 
                         team.AddPlayer(player, player.Player_Number);
 
-
+                        // tulostaa joukkueen pelaajat
                         team.Print_Team_Players();
                         Console.WriteLine();
 
