@@ -1,94 +1,108 @@
 ﻿using harjoitus13;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 class class1
 {
     static void Main()
     {
         Team team = new Team();
-        
 
         while (true)
         {
-            if (true)
+            Console.Write("Haluatko lisätä uuden joukkueen Kyllä/ei     ");
+            string user = Console.ReadLine();
+
+            //jos käyttäjä ei anna syötettä sulkeutuu ohjelma
+            if (string.IsNullOrEmpty(user))
             {
+                System.Environment.Exit(1);
+            }
+
+            //jos käyttäjän syöte on ei ohjelma sulkeutuu
+            if (user.ToLower() == "ei")
+            {
+                System.Environment.Exit(1);
+            }
+
+            // jos käyttäjän syöte on kyllä kysytään tältä uuden joukkueen nimeä
+            else if (user.ToLower() == "kyllä")
+            {
+                Console.Write("Anna uuden joukkueen nimi: ");
+                team.Team_Name = Console.ReadLine();
+
+                // jos käyttäjän syöte on tyhjä ohjelma sulkeutuu
+                if (string.IsNullOrEmpty(team.Team_Name))
+                {
+                    System.Environment.Exit(1);
+                }
+
+                    Console.Write("Anna joukkueen " + team.Team_Name + " Kotikaupunki");
+                    team.Home_City = Console.ReadLine();
+
+                    if (string.IsNullOrEmpty(team.Home_City))
+                    {
+                        System.Environment.Exit(1);
+                    }
+                
+
                 while (true)
                 {
-                    Console.Write("Haluatko lisätä uuden joukkueen Kyllä/ei     ");
-                    string user = Console.ReadLine();
-                    try
+                    Console.Write("Lisää joukkueelle pelaajia kyllä / ei   ");
+                    string User_Add_Players = Console.ReadLine();
+
+                    // jos käyttäjän syöte on tyhjä ohjelma sulkeutuu
+                    if (string.IsNullOrEmpty(User_Add_Players))
                     {
-                        if (string.IsNullOrEmpty(user))
-                        {
-                            System.Environment.Exit(1);
-                        }
-                    }
-                    catch
-                    {
-                        Console.WriteLine("string.nullempty");
-                    }
-                    try
-                    {
-                        if (user.ToLower() == "ei")
-                        {
-                            System.Environment.Exit(1);
-                        }
-                    }
-                    catch
-                    {
-                        Console.WriteLine("ei");
-                    }
-                    try
-                    {
-                        if (user.ToLower() == "kyllä")
-                        {
-                            Console.Write("Anna uuden joukkueen nimi: ");
-                            team.Team_Name = Console.ReadLine();
-                        }
-                        if (string.IsNullOrEmpty(user))
-                        {
-                            System.Environment.Exit(1);
-                        }
-                    }
-                    catch
-                    {
-                        Console.WriteLine("ei");
+                        break;
                     }
 
-                    Console.ReadLine();
-                    Console.Write("Lisää joukkueelle pelaajia kyllä / ei");
-                    while (true)
+                    // jos käyttäjän syöte on ei ohjelma sulkeutuu
+                    if (User_Add_Players.ToLower() == "ei")
                     {
-                        Console.Write("Pelaajan etunimi: ");
+                        System.Environment.Exit(1);
+                    }
+
+                    // jos käyttäjän syöte on kyllä kysytään tältä uuden pelaajan tiedot ja pelaaja lisätään joukkueeseen
+
+
+                    else if (User_Add_Players.ToLower() == "kyllä")
+                    {
+                        Player player = new Player();
+
+
+                        Console.Write("Anna uuden pelaajan etunimi: ");
                         string FN = Console.ReadLine();
 
-                        if (FN.ToLower() == "ei" && FN.ToLower() == null)
+
+                        if (string.IsNullOrEmpty(FN))
                         {
                             break;
                         }
 
-                        Player player = new Player();
-                        {
-                            player.First_Name = FN;
-                        }
-                        Console.WriteLine("Pelaajan sukunimi: ");
+                        player.First_Name = FN;
+
+                        Console.Write("Pelaajan sukunimi: ");
                         string LN = Console.ReadLine();
+                        if (string.IsNullOrEmpty(LN))
+                        {
+                            break;
+                        }
+
                         player.Last_Name = LN;
 
-                        Console.WriteLine("Pelaajan pelinumero: ");
-                        int PN = Convert.ToInt32(Console.Read());
+                        Console.Write("Pelaajan pelinumero: ");
+                        int PN = Convert.ToInt32(Console.ReadLine());
                         player.Player_Number = PN;
+
                         team.AddPlayer(player, player.Player_Number);
+
+
                         team.Print_Team_Players();
+                        Console.WriteLine();
+
                     }
-                    Console.WriteLine("Joukkueen pelaajat: ");
-                }                
+                }
             }
         }
+
     }
 }

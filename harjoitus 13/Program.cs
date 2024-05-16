@@ -30,12 +30,12 @@ namespace harjoitus13
 
         public void Print_Team_Players()
         {
-            Console.WriteLine("Pelaajat tiimissä: " + Team_Name + ":");
+            Console.WriteLine("Pelaajat tiimissä: " + Team_Name + " " + Home_City + ";");
 
             foreach (var player in Playing_4_Team)
             {
                 Console.WriteLine("Pelinumero: " + player.Key +
-                   ", Etunimi: " + player.Value.First_Name + " " + player.Value.Last_Name);
+                   ", nimi: " + player.Value.First_Name + " " + player.Value.Last_Name);
             }
         }
     }
