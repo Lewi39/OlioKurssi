@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht1 Ajoneuvo", "Teht1 Ajoneuvo\Teht1 Ajoneuvo.csproj", "{7EF1AC09-4FD9-4380-91C3-3B363157D88D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-1 Ajoneuvo", "Teht1 Ajoneuvo\Teht-1 Ajoneuvo.csproj", "{7EF1AC09-4FD9-4380-91C3-3B363157D88D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht4 Albumi", "Teht4 Albumi\Teht4 Albumi.csproj", "{4F13D131-C236-4912-9E40-7EBA2BF6EA3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-4 Albumi", "Teht4 Albumi\Teht-4 Albumi.csproj", "{4F13D131-C236-4912-9E40-7EBA2BF6EA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht2 Opiskelija", "Teht2 Opiskelija\Teht2 Opiskelija.csproj", "{A29E042D-5F19-4385-98B3-0FE63C1EE958}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-2 Opiskelija", "Teht2 Opiskelija\Teht-2 Opiskelija.csproj", "{A29E042D-5F19-4385-98B3-0FE63C1EE958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht5 Laskin", "Teht5 Laskin\Teht5 Laskin.csproj", "{09534D5E-6924-4DAA-9AA4-0B5D32A4835D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-5 Laskin", "Teht5 Laskin\Teht-5 Laskin.csproj", "{09534D5E-6924-4DAA-9AA4-0B5D32A4835D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-7", "Teht-7\Teht-7.csproj", "{6447861B-78B6-48E1-9740-50CABBC05CA2}"
 EndProject
@@ -17,19 +17,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-8", "Teht-8\Teht-8.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-9", "Teht-9\Teht-9.csproj", "{A194B55E-5DDB-4A52-851E-47DAA19A0BC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht3 Kiuas", "Teht3 Kiuas\Teht3 Kiuas.csproj", "{4223535D-E810-48F2-AF77-0671A26742EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-3 Kiuas", "Teht3 Kiuas\Teht-3 Kiuas.csproj", "{4223535D-E810-48F2-AF77-0671A26742EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teht-10", "teht-10\teht-10.csproj", "{5176C56A-3B1A-4059-9287-9DC88FDE0DDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "t11", "t11\t11.csproj", "{9BDE3BEC-566B-4E52-80C5-2422D074ACF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-11", "t11\Teht-11.csproj", "{9BDE3BEC-566B-4E52-80C5-2422D074ACF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "t12", "t12\t12.csproj", "{4CAB01CF-4850-4A01-B57E-20EC6749B21E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-12", "t12\Teht-12.csproj", "{4CAB01CF-4850-4A01-B57E-20EC6749B21E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tw", "tw\tw.csproj", "{DD353163-DB24-4E17-AD89-67380124330E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "t13", "t13\t13.csproj", "{59B7F5EB-688B-4385-8A69-483AD16D06DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harjoitus 13", "harjoitus 13\harjoitus 13.csproj", "{F4B62271-180F-4B02-BF3A-4DE5D2C2A999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teht-13", "harjoitus 13\Teht-13.csproj", "{F4B62271-180F-4B02-BF3A-4DE5D2C2A999}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,14 +77,6 @@ Global
 		{4CAB01CF-4850-4A01-B57E-20EC6749B21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CAB01CF-4850-4A01-B57E-20EC6749B21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CAB01CF-4850-4A01-B57E-20EC6749B21E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD353163-DB24-4E17-AD89-67380124330E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD353163-DB24-4E17-AD89-67380124330E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD353163-DB24-4E17-AD89-67380124330E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD353163-DB24-4E17-AD89-67380124330E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59B7F5EB-688B-4385-8A69-483AD16D06DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59B7F5EB-688B-4385-8A69-483AD16D06DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59B7F5EB-688B-4385-8A69-483AD16D06DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59B7F5EB-688B-4385-8A69-483AD16D06DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4B62271-180F-4B02-BF3A-4DE5D2C2A999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4B62271-180F-4B02-BF3A-4DE5D2C2A999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B62271-180F-4B02-BF3A-4DE5D2C2A999}.Release|Any CPU.ActiveCfg = Release|Any CPU

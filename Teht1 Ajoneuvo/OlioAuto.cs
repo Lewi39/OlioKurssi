@@ -13,9 +13,7 @@ namespace OlioKurssi
             OlioAuto auto = new OlioAuto();
 
             auto.nimi = "Toyota";
-
             auto.nopeus = 80;
-
             auto.renkaat = 4;
 
             auto.tulostadata();
