@@ -14,11 +14,7 @@ namespace t12
         {
             Korttipakka My_Korttipakka = new Korttipakka();
             My_Korttipakka.Main();
-            Console.ReadKey();
-
-         
-        }
-
-        
+            Console.ReadKey();         
+        }        
     }
 }
