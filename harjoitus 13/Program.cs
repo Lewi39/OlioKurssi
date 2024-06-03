@@ -14,7 +14,7 @@ namespace harjoitus13
         public void Print_Player()
         {
             Console.WriteLine("Etunimi: " + First_Name + " Sukunimi: " + Last_Name +" Pelinumero: "+ Player_Number);
-        }   //?-?
+        }   //?-? 
     }
     class Team
     {
