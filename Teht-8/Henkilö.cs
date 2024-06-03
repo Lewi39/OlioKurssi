@@ -12,16 +12,12 @@ namespace Teht_8
         {
             Console.WriteLine("Amazon");
         }
-
         public abstract void PrintData();
-
-        public virtual string Nimi { get; set; }
-        
+        public virtual string Nimi { get; set; }        
         public virtual void palkka()
         {
             Console.WriteLine("3700 e");
-        }
-      
+        }      
         public float Bonus {  get; set; }
     }
     class työntekijä : Henkilö
@@ -48,26 +44,22 @@ namespace Teht_8
             Työpaikka();
             Console.WriteLine("Työaika" + TyöTunnit);
             palkka();
-        }
+        }   //Methodi datan printtaukseen
 
     }
     class Pomo : Henkilö
     {
-
         public float bonus { get; set; }
         public string AutonMerkki { get; set; }
-
         public Pomo(string nimi) : base()
         {
             Nimi = nimi;
             bonus = 0.13f;
         }
-
         public override void palkka()
         {
             Console.WriteLine("4181 e");    
         }
-
         public override void Työpaikka()
         {
             base.Työpaikka();
@@ -81,7 +73,6 @@ namespace Teht_8
             Console.Write("Työpaikka: ");
             Työpaikka();
             Console.WriteLine("Bonus: 1" + (Bonus * 100) + " %");
-
             palkka();
             Console.WriteLine("Autonmerkki: " + AutonMerkki);
 
