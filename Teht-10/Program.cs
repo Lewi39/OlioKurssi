@@ -11,15 +11,11 @@ namespace teht_10
         static void Main(string[] args)
         {
             Pulu Pulu = new Pulu("Pulu", 50);
-
             Ahven ahven = new Ahven("Ahven", 40);
-
             Pulu.Make_A_Sound();
             Pulu.fly();
-
             ahven.Make_A_Sound();
             ahven.Swim();
-
             Console.ReadLine();
         }
     }
