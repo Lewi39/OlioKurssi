@@ -6,8 +6,13 @@ class class1
     {
         Team team = new Team();
 
+
         while (true)
         {
+            if (team.Team_Name != null)
+            {
+                break;
+            }
             Console.Write("Haluatko lisätä uuden joukkueen Kyllä/ei     ");
             string user = Console.ReadLine();
 
@@ -26,6 +31,7 @@ class class1
             // jos käyttäjän syöte on kyllä kysytään tältä uuden joukkueen nimeä
             else if (user.ToLower() == "kyllä")
             {
+
                 Console.Write("Anna uuden joukkueen nimi: ");
                 team.Team_Name = Console.ReadLine();
 
@@ -34,15 +40,15 @@ class class1
                 {
                     System.Environment.Exit(1);
                 }
-                    // käyttäjän syöte kaupungille
-                    Console.Write("Anna joukkueen " + team.Team_Name + " Kotikaupunki");
-                    team.Home_City = Console.ReadLine();
+                // käyttäjän syöte kaupungille
+                Console.Write("Anna joukkueen " + team.Team_Name + " Kotikaupunki   ");
+                team.Home_City = Console.ReadLine();
 
-                    if (string.IsNullOrEmpty(team.Home_City))
-                    {
-                        System.Environment.Exit(1);
-                    }
-                
+                if (string.IsNullOrEmpty(team.Home_City))
+                {
+                    System.Environment.Exit(1);
+                }
+
 
                 while (true)
                 {
@@ -50,16 +56,17 @@ class class1
                     string User_Add_Players = Console.ReadLine();
 
                     // jos käyttäjän syöte on tyhjä ohjelma sulkeutuu
-                    if (string.IsNullOrEmpty(User_Add_Players))
+                    if (string.IsNullOrEmpty(User_Add_Players) && User_Add_Players.ToLower() == "ei")
                     {
                         break;
                     }
 
                     // jos käyttäjän syöte on ei ohjelma sulkeutuu
-                    if (User_Add_Players.ToLower() == "ei")
+                    if (User_Add_Players.ToLower() == "ei" || (string.IsNullOrEmpty(User_Add_Players)) && team.Print_Team_Players != null)
                     {
-                        System.Environment.Exit(1);
+                        team.Print_Team_Players();
                     }
+
 
                     // jos käyttäjän syöte on kyllä kysytään tältä uuden pelaajan tiedot ja pelaaja lisätään joukkueeseen
 
@@ -95,14 +102,42 @@ class class1
 
                         team.AddPlayer(player, player.Player_Number);
 
-                        // tulostaa joukkueen pelaajat
-                        team.Print_Team_Players();
-                        Console.WriteLine();
+                        Console.Write("Haluatko listan " + team.Team_Name + " pelaajista kyllä / ei  ");
+                        string User_players = Console.ReadLine();
+                        if (User_players.ToLower() == "kyllä")
+                        {
+                            // tulostaa joukkueen pelaajat
+                            team.Print_Team_Players();
 
+                            Console.Write("Haluatko poistaa pelaajan joukkueesta kyllä/ei   ");
+                            string User_Remove = Console.ReadLine();
+                            if (User_Remove.ToLower() == "ei" || (string.IsNullOrEmpty(User_Remove)))
+                            {
+                                break;
+                            }
+
+                            if (User_Remove.ToLower() == "kyllä")
+                            {
+                                Console.Write("Anna pelaajan pelinumero: ");
+                                int PN1 = Convert.ToInt32(Console.ReadLine());
+                                if (team.Playing_4_Team.ContainsKey(PN1))
+                                {
+                                    team.Playing_4_Team.Remove(PN1);
+                                    Console.WriteLine("Pelaaja poistettu");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Pelaajaa ei löydetty");
+                                }
+                                team.Print_Team_Players();  
+                                break;
+                            }
+
+                        }
                     }
                 }
             }
         }
-
     }
+
 }
