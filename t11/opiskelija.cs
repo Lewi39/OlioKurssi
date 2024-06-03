@@ -13,17 +13,6 @@ namespace t11
         public string lastname { get; set; }
         public int classid { get; set; }
         public int studentid { get; set; }
-
-
-        
-
-
-
-
-
-
-
-       
     }
 
 }
