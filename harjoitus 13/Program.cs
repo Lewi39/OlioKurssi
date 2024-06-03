@@ -14,7 +14,7 @@ namespace harjoitus13
         public void Print_Player()
         {
             Console.WriteLine("Etunimi: " + First_Name + " Sukunimi: " + Last_Name +" Pelinumero: "+ Player_Number);
-        }
+        }   //?-?
     }
     class Team
     {
@@ -26,7 +26,6 @@ namespace harjoitus13
         {
             Playing_4_Team.Add(Player_Number, player);  
         }
-
         public void Print_Team_Players()
         {
             Console.WriteLine("Pelaajat tiimissä: " + Team_Name + " " + Home_City + ";");
@@ -36,9 +35,6 @@ namespace harjoitus13
                 Console.WriteLine("Pelinumero: " + player.Key +
                    ", nimi: " + player.Value.First_Name + " " + player.Value.Last_Name);
             }
-        }
-
-
-
+        }   // Printtaa joukkueen pelaajat
     }
 }
