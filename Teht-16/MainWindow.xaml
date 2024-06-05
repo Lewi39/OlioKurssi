@@ -1,0 +1,33 @@
+﻿<Window x:Class="Teht_16.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="Teht_16"
+        mc:Ignorable="d"
+        Title="Km To Miles" Height="1080" Width="1920">
+    <Grid Margin="-32,0,-57,-43" OpacityMask="Black">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF338F96" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="933*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="LbEnter" Content="Enter Distance:" HorizontalAlignment="Left" Margin="306,65,0,0" VerticalAlignment="Top" Height="39" Width="177" Foreground="White" FontSize="24" FontFamily="Bahnschrift"/>
+        <Label x:Name="LbConvert" Content="Converted Distance:" HorizontalAlignment="Left" Margin="242,73,0,0" VerticalAlignment="Top" Height="37" Width="226" Grid.Row="2" AutomationProperties.IsOffscreenBehavior="Onscreen" Foreground="White" FontSize="24" FontFamily="Bahnschrift"/>
+        <TextBox x:Name="TbEnter" HorizontalAlignment="Left" Height="60" Margin="488,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="48" FontFamily="Bahnschrift" Text="&#xA;"/>
+        <TextBox x:Name="TbConvert" HorizontalAlignment="Left" Height="55" Margin="488,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Grid.Row="2" FontSize="48" FontFamily="Bahnschrift" Text=""/>
+        <Button x:Name="Bt_Km_To_Miles" Content="Km To Miles" Margin="710,42,709,0"
+                VerticalAlignment="Top" Height="88" Click="Bt_Km_To_Miles_Click" Grid.RowSpan="2" Background="Black" Foreground="White" FontSize="36" FontFamily="Bahnschrift"/>
+        <Button x:Name="Bt_Miles_To_Km" Content="Miles To Km" HorizontalAlignment="Center" Margin="0,10,0,0"
+                VerticalAlignment="Top" Height="79" Width="590" Click="Bt_Miles_To_Km_Click" Grid.RowSpan="2" Grid.Row="1" Foreground="White" Background="Black" FontSize="36" FontFamily="Bahnschrift"/>
+        <Button x:Name="BtClear" Content="Clear" HorizontalAlignment="Center" Margin="0,72,0,0"
+            VerticalAlignment="Top" Height="76" Width="590" Click="BtClear_Click" Grid.Row="2" Background="Black" Foreground="White" BorderBrush="{x:Null}" FontSize="36" FontFamily="Bahnschrift"/>
+    </Grid>
+</Window>
