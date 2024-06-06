@@ -59,10 +59,8 @@ namespace Teht_9
                 Console.WriteLine("");
             }
         }
-
         public class Radio  //radio luokka mikä  sisältää radion toimintoja 
         {
-
             public bool Kytkin { get; set; }    
 
             // Äänenvoimakkuuden muuttuja
@@ -70,7 +68,6 @@ namespace Teht_9
             public virtual int Äänen_Voimakkuus
             {
                 get { return Ääneen_VoimakkuuSS; }
-
                 set
                 {
                     if (value >= 1 && value <= 9)       //rajaa äänenvoimakkuuden korkeutta
@@ -99,8 +96,6 @@ namespace Teht_9
                 Kytkin = false;
                 Console.WriteLine("Radio on nyt pois päältä");
             }
-
-
             //Taajuudenvalinta muuttuja
             private float Taajuss;
             public virtual float Taajus_Valinta

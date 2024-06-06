@@ -13,17 +13,14 @@ namespace Teht5_Laskin
         {
             return a + b;
         }
-
         public static float Erotus (float a, float b)
         {
             return a - b;
         }
-
         public static float Kertolasku(float a, float b)
         {
             return a * b;
         }
-
         public static float Jakolasku(float a, float b)
         {
             return a / b;

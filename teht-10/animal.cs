@@ -9,7 +9,6 @@ namespace teht_10
     abstract class animal
     {
         public string Name {  get; set; }
-
         public abstract void Make_A_Sound();
     }
 }

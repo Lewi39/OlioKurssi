@@ -2,14 +2,13 @@
 {
     internal class Song
     {
-        
-            public string Songg { get; set; }
-            public string Lengthh { get; set; }
+        public string Songg { get; set; }
+        public string Lengthh { get; set; }
 
-            public Song(string song, string length)
-            {
-                this.Songg = song;
-                Lengthh = length;
-            }
+        public Song(string song, string length)
+        {
+            this.Songg = song;
+            Lengthh = length;
         }
+    }
 }

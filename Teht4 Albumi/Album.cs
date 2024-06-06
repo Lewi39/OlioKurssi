@@ -8,7 +8,6 @@ namespace Teht4
 {
     internal class Album
     {
-        //Muuttujat
         public string Artist { get; set; }
         public string Genre { get; set; }
         public string Albumi { get; set; }
@@ -38,7 +37,6 @@ namespace Teht4
             }
         }
 
-        //Metodi "Addsongs" toimii porttina  datan lisäämisen listaan suoraan toisesta tiedostosta
         public void AddSongs(Song Song)
         {
             Songs.Add(Song);

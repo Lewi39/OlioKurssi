@@ -16,7 +16,7 @@ class class1
             Console.Write("Haluatko lisätä uuden joukkueen Kyllä/ei     ");
             string user = Console.ReadLine();
 
-            //jos käyttäjä ei anna syötettä sulkeutuu ohjelma
+            //jos käyttäjä ei anna syötettä sulkeutuu ohjelma 
             if (string.IsNullOrEmpty(user))
             {
                 System.Environment.Exit(1);

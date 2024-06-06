@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-12", "t12\Teht-12.cspr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teht-13", "harjoitus 13\Teht-13.csproj", "{F4B62271-180F-4B02-BF3A-4DE5D2C2A999}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-15", "Teht-15\Teht-15.csproj", "{83928AC3-4816-422B-AE7E-949FB8CA15C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-16", "Teht-16\Teht-16.csproj", "{2E3D51D9-7D0B-4792-8D07-E632C36E7690}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{F4B62271-180F-4B02-BF3A-4DE5D2C2A999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B62271-180F-4B02-BF3A-4DE5D2C2A999}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B62271-180F-4B02-BF3A-4DE5D2C2A999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83928AC3-4816-422B-AE7E-949FB8CA15C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83928AC3-4816-422B-AE7E-949FB8CA15C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83928AC3-4816-422B-AE7E-949FB8CA15C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83928AC3-4816-422B-AE7E-949FB8CA15C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3D51D9-7D0B-4792-8D07-E632C36E7690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3D51D9-7D0B-4792-8D07-E632C36E7690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3D51D9-7D0B-4792-8D07-E632C36E7690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3D51D9-7D0B-4792-8D07-E632C36E7690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

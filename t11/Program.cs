@@ -12,14 +12,9 @@ namespace t11
         {
 
             Dictionary<string, int> StudentId = new Dictionary<string, int>();
-
-
             StudentId.Add("Name1", 1);
             StudentId.Add("Name2", 2);
             StudentId.Add("Name3", 3);
-
-
-
             Console.WriteLine("Student num: = "+ StudentId["Name1"]);
 
             Console.ReadLine();

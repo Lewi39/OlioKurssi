@@ -15,7 +15,6 @@ namespace Teht_7
             get { return kerros; }
             set
             {
-
                 if (value >=1 && value <= 6)
                 {
                     kerros = value;
@@ -26,6 +25,7 @@ namespace Teht_7
                 }
             }
         }
+        // Jos "value" on yhtää suuri kuin 1 tai mutta pienempi, kuin 6 on value silloin = kerros
         public void KerrosOutput(int KerrosInput)
         {
             Kerros = KerrosInput;

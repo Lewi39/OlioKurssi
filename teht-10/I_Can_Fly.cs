@@ -10,6 +10,5 @@ namespace teht_10
     {
         float Wing_Size { get; set; }
         void fly();
-
     }
 }
