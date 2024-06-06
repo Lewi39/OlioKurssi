@@ -1,0 +1,22 @@
+﻿<Window x:Class="Teht_17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teht_17"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF054D1C">
+        <Label x:Name="LbKeittiö" Content="Keittiön valot" HorizontalAlignment="Left" Margin="177,52,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LbLämpö" Content="Lämpötilla:" HorizontalAlignment="Left" Margin="178,17,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LbOvi" Content="Ovi on" HorizontalAlignment="Left" Margin="202,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Lbolohuone" Content="Olohuoneen valot" HorizontalAlignment="Left" Margin="177,88,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="SliderLämpö" HorizontalAlignment="Left" Margin="157,36,0,0"
+                VerticalAlignment="Top" Width="120" ValueChanged="SliderLämpö_ValueChanged"
+                Maximum="35.00" Minimum="0.00" SmallChange="0.1" LargeChange="1.00" />
+        <Button x:Name="BtKeittiö" Content="katkaisin" HorizontalAlignment="Left" Margin="185,72,0,0" VerticalAlignment="Top" Width="71" Click="BtKeittiö_Click"/>
+        <Button x:Name="BtOlohuone" Content="katkaisin" HorizontalAlignment="Left" Margin="192,110,0,0" VerticalAlignment="Top" Width="71" Click="BtOlohuone_OnClick"/>
+        <Button x:Name="BtOvi" Content="Lukko" HorizontalAlignment="Left" Margin="186,163,0,0" VerticalAlignment="Top" Width="71" Click="BtOvi_OnClick"/>
+
+    </Grid>
+</Window>
