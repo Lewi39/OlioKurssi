@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-1 Ajoneuvo", "Teht1 Ajoneuvo\Teht-1 Ajoneuvo.csproj", "{7EF1AC09-4FD9-4380-91C3-3B363157D88D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-1", "Teht1 Ajoneuvo\Teht-1.csproj", "{7EF1AC09-4FD9-4380-91C3-3B363157D88D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-4 Albumi", "Teht4 Albumi\Teht-4 Albumi.csproj", "{4F13D131-C236-4912-9E40-7EBA2BF6EA3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-4", "Teht4 Albumi\Teht-4.csproj", "{4F13D131-C236-4912-9E40-7EBA2BF6EA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-2 Opiskelija", "Teht2 Opiskelija\Teht-2 Opiskelija.csproj", "{A29E042D-5F19-4385-98B3-0FE63C1EE958}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-2", "Teht2 Opiskelija\Teht-2.csproj", "{A29E042D-5F19-4385-98B3-0FE63C1EE958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-5 Laskin", "Teht5 Laskin\Teht-5 Laskin.csproj", "{09534D5E-6924-4DAA-9AA4-0B5D32A4835D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-5", "Teht5 Laskin\Teht-5.csproj", "{09534D5E-6924-4DAA-9AA4-0B5D32A4835D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-7", "Teht-7\Teht-7.csproj", "{6447861B-78B6-48E1-9740-50CABBC05CA2}"
 EndProject
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-8", "Teht-8\Teht-8.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-9", "Teht-9\Teht-9.csproj", "{A194B55E-5DDB-4A52-851E-47DAA19A0BC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-3 Kiuas", "Teht3 Kiuas\Teht-3 Kiuas.csproj", "{4223535D-E810-48F2-AF77-0671A26742EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht-3", "Teht3 Kiuas\Teht-3.csproj", "{4223535D-E810-48F2-AF77-0671A26742EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teht-10", "teht-10\teht-10.csproj", "{5176C56A-3B1A-4059-9287-9DC88FDE0DDB}"
 EndProject
