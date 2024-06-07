@@ -1,0 +1,42 @@
+﻿<Window x:Class="Teht_19.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teht_19"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300">
+    <Grid>
+        <ProgressBar 
+            x:Name="PBKerros"
+            HorizontalAlignment="Left"
+            Height="10" Margin="125,40,0,0"
+            VerticalAlignment="Top" Width="100"
+            ValueChanged="PBKerros_ValueChanged" Maximum="6"/>
+        <Slider
+            x:Name="SLKerros"
+            HorizontalAlignment="Left"
+            Margin="52,94,0,0" VerticalAlignment="Top"
+            Width="120"
+            RenderTransformOrigin="0.5,0.5"
+            Maximum="6"
+            SmallChange="1"
+            ValueChanged="SLKerros_ValueChanged">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="270"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <TextBlock
+            Text=""
+            x:Name="TbOutput"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" Margin="175,65,0,0"/>
+
+    </Grid>
+</Window>
