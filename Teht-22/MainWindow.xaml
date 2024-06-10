@@ -1,0 +1,60 @@
+﻿<Window x:Class="Teht_22.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teht_22"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="170" Width="290">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label 
+            Grid.Column="0"
+            Grid.Row="0"
+            Content="Ikkunan Leveys" Margin="0,-2,0,0"/>
+        <TextBox
+            Grid.Column="1"
+            Grid.Row="0"
+            x:Name="TbLeveys"
+            Width="100"
+            Height="23"/>
+        <Label
+            Grid.Column="0"
+            Content="Ikkunan Korkeus" Margin="0,20,0,4" Grid.RowSpan="2"/>
+        <TextBox
+            Grid.Column="1"
+            Grid.Row="1"
+            x:Name="TbKorkeus"
+            Width="100"
+            Height="23"/>
+        <Label
+            Grid.Column="0"
+            Grid.Row="1"
+            Content="Karmipuun Leveys" Margin="-5,23,5,3" Grid.RowSpan="2"/>
+        <TextBox
+            Grid.Column="1"
+            Grid.Row="2"
+            x:Name="TbLeveyss"
+            Width="100"
+            Height="23"/>
+        <Button
+            Grid.Column="0"
+            Grid.Row="3"
+            Content="Laske"
+            Click="Button_Click" Margin="0,10,0,-41"/>
+        <TextBlock
+            Grid.Row="3"
+            x:Name="ResultTextBlock"
+            Text="" Height="35" VerticalAlignment="Top" Grid.Column="1" Margin="0,3,0,0"/>
+    </Grid>
+</Window>
