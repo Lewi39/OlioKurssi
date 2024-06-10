@@ -1,0 +1,43 @@
+﻿<Window x:Class="Teht_21.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teht_21"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Menu>        
+        <RadioButton Content="Maito" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Leipä" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Kananmuna" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Omena" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Porkkana" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Kana" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Riisi" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Peruna" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Banaani" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Sokeri" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Kahvi purut" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Tee pussi" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Vessa paperi" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Shampoo" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Saippua" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Pasta" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Tomaatti murska" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Voi" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Cheese" Checked="RadioButton_Checked"/>
+        <ListView
+            x:Name="ListView" 
+            HorizontalAlignment="Left"
+            Height="200"
+            VerticalAlignment="Top"
+            Margin="5"
+            Width="200">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Menu>
+</Window>
