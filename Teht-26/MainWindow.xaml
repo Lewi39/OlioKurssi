@@ -1,0 +1,70 @@
+﻿<Window x:Class="Teht_26.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="Teht_16"
+        mc:Ignorable="d"
+        Title="Km To Miles" Height="1080" Width="1920">
+    <Grid Margin="-32,0,-57,-43" OpacityMask="Black">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF338F96" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="933*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="LbEnter" Content="Anna matkan pituus:" HorizontalAlignment="Left" Margin="243,70,0,0" VerticalAlignment="Top" Height="39" Width="240" Foreground="White" FontSize="24" FontFamily="Bahnschrift"/>
+        <Label x:Name="LbConvert" Content="Muunnettu matka:" HorizontalAlignment="Left" Margin="280,82,0,0" VerticalAlignment="Top" Height="37" Width="226" Grid.Row="2" AutomationProperties.IsOffscreenBehavior="Onscreen" Foreground="White" FontSize="24" FontFamily="Bahnschrift"/>
+
+        <!--Syöte laatikko-->
+        <TextBox x:Name="TbEnter" HorizontalAlignment="Left" Height="60" Margin="488,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="48" FontFamily="Bahnschrift" Text="&#xA;"/>
+        <!--Muutetun yksikön arvo-->
+        <TextBlock x:Name="TbConvertedOutput" HorizontalAlignment="Left" Height="55" Margin="488,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Grid.Row="2" FontSize="48" FontFamily="Bahnschrift" Text="" Background="White"/>
+
+        <!--Nappula josta lasketaan muutettavan yksikön arvo-->
+        <Button x:Name="BtCalculate" Content="Calculate" Margin="710,42,709,0"
+                VerticalAlignment="Top" Height="88" Click="BtCalculate_Click" Grid.RowSpan="2" Background="Black" Foreground="White" FontSize="36" FontFamily="Bahnschrift"/>
+
+        <!-- Tyhjentää syötelaatikon-->
+        <Button x:Name="BtClear" Content="Clear" HorizontalAlignment="Center" Margin="0,72,0,0"
+            VerticalAlignment="Top" Height="76" Width="590" Click="BtClear_Click" Grid.Row="2" Background="Black" Foreground="White" BorderBrush="{x:Null}" FontSize="36" FontFamily="Bahnschrift"/>
+
+        <!-- Valintalaatikko syötettävän yksikön määrittämiseksi -->
+        <ComboBox
+            x:Name="CbInput"
+            HorizontalAlignment="Left"
+            Margin="540,36,0,0"
+            VerticalAlignment="Top"
+            Width="120" IsEditable="True">
+            <ComboBoxItem Content="Miles"/>
+            <ComboBoxItem Content="Kilometers"/>
+            <ComboBoxItem Content="Meters"/>
+            <ComboBoxItem Content="Centimeters"/>
+            <ComboBoxItem Content="Yards"/>
+            <ComboBoxItem Content="Foot"/>
+            <ComboBoxItem Content="Inches"/>
+        </ComboBox>
+
+        <!-- Valintalaatikko muunnettavan yksikön määrittelemiseksi -->
+        <ComboBox
+            x:Name="CbOutput"
+            HorizontalAlignment="Left"
+            Margin="537,50,0,0"
+            VerticalAlignment="Top"
+            Width="120" Grid.Row="2" IsEditable="True">
+            <ComboBoxItem Content="Miles"/>
+            <ComboBoxItem Content="Kilometers"/>
+            <ComboBoxItem Content="Meters"/>
+            <ComboBoxItem Content="Centimeters"/>
+            <ComboBoxItem Content="Yards"/>
+            <ComboBoxItem Content="Feet"/>
+            <ComboBoxItem Content="Inches"/>
+        </ComboBox>
+    </Grid>
+</Window>
